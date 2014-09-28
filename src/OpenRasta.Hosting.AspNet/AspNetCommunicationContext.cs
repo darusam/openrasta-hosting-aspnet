@@ -60,7 +60,7 @@ namespace OpenRasta.Hosting.AspNet
             set { NativeContext.User = value; }
         }
 
-        HttpContext NativeContext { get; set; }
+        protected internal HttpContext NativeContext { get; set; }
     }
 }
 
