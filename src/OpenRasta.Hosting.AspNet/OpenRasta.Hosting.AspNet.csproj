@@ -52,6 +52,7 @@
     </Compile>
     <Compile Include="AspNetCommunicationContext.cs" />
     <Compile Include="AspNetContextExtensions.cs" />
+    <Compile Include="AspNetContextSession.cs" />
     <Compile Include="AspNetContextStore.cs" />
     <Compile Include="AspNetHost.cs" />
     <Compile Include="AspNetHttpListener\HttpListenerAspNetHost.cs" />

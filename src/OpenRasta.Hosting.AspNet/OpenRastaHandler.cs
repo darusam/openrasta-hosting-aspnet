@@ -9,6 +9,7 @@
 #endregion
 
 using System.Web;
+using System.Web.SessionState;
 using OpenRasta.DI;
 using OpenRasta.Diagnostics;
 
@@ -43,7 +44,7 @@ namespace OpenRasta.Hosting.AspNet
         }
     }
 
-    public class OpenRastaRewriterHandler : IHttpHandler
+    public class OpenRastaRewriterHandler : IHttpHandler, IRequiresSessionState
     {
         public OpenRastaRewriterHandler()
         {
@@ -66,7 +67,7 @@ namespace OpenRasta.Hosting.AspNet
         }
     }
 
-    public class OpenRastaIntegratedHandler : IHttpHandler
+    public class OpenRastaIntegratedHandler : IHttpHandler, IRequiresSessionState
     {
         public OpenRastaIntegratedHandler()
         {

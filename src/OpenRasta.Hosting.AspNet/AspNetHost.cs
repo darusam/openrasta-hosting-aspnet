@@ -160,6 +160,7 @@ namespace OpenRasta.Hosting.AspNet
             resolver.AddDependency<OpenRastaRewriterHandler>(DependencyLifetime.Transient);
             resolver.AddDependency<OpenRastaIntegratedHandler>(DependencyLifetime.Transient);
             resolver.AddDependency<ILogger<AspNetLogSource>, TraceSourceLogger<AspNetLogSource>>(DependencyLifetime.Transient);
+            resolver.AddDependency<IContextSession, AspNetContextSession>(DependencyLifetime.Singleton);
             return true;
         }
 
